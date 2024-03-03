@@ -3,46 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="./Assets/index.css">
+    <title>Govardhan - Web Developer</title>
+    <link rel="stylesheet" href="./assets/test.css">
+    <!-- Replace this with the link to the colored version of Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="content-container">
-        <h1>Govardhan Annabathula</h1>
-        <img src="./Assets/images/my-photo.jpg" alt="my photo" height="150" class="profile_image">
-    </div>    
-    
-    <hr>
+    <div class="card">
+        <header>
+            <div class="container">
+                <h1>Govardhan</h1>
+                <img src="../Assets/images/my-photo.jpg" alt="Your Photo">
+                <p style="font-weight: bold;">Aspiring Web Developer</p>
+                <br>
+            </div>
+        </header>
 
-    <h2>Summary</h2>
-    <p>I am an aspiring software developer. I am still doing my Bachelor's Degree in Computer Science in GITAM University in Hyderabad, Telangana, India.</p>
+        <section id="tech-stack">
+            <div class="container">
+                <h2>Tech Stack</h2>
+                <br>
+                <ul class="icon-list">
+                    <!-- Use colored versions of icons -->
+                    <li><i class="fab fa-html5 icon-large" style="color: #E34F26;"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt icon-large" style="color: #1572B6;"></i> CSS</li>
+                    <li><i class="fab fa-js-square icon-large" style="color: #F7DF1E;"></i> JavaScript</li>
+                </ul>
+                <br>
+            </div>
+        </section>
 
-    <hr>
-
-    <h2>Current Tech Stack</h2>
-    <img src="./Assets/images/html-5-logo-svgrepo-com.svg" alt="HTML Logo" class="tech_stack_icons">
-    <img src="./Assets/images/css-3-svgrepo-com.svg" alt="CSS Logo" class="tech_stack_icons">
-    <img src="./Assets/images/javascript-svgrepo-com.svg" alt="CSS Logo" class="tech_stack_icons">
-
-    <hr>
-    
-    <h2>Education</h2>
-    <ul>
-        <li>Diploma in Mechanical Engineering - VNR VJIET (2019 - 2022)</li>
-        <li>Highschool - MNR Scottsdale (2007 - 2019)</li>
-    </ul>
-
-    <hr>
-
-    <h2>Others</h2>
-    <ul class="others">
-        <li><a href="./public/interests.html">Interests and Hobbies</a></li>
-        <li><a href="./public/contact.html">Contact Me</a></li>
-    </ul>
-
-    <footer>
-        <p>&copy; Govardhan Annabathula. All rights reserved.</p>
-    </footer>
-
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <br>
+                <div class="email">
+                    <p><i class="fas fa-envelope icon-large" style="color: #000000;"></i> govardhan.personal.new@gmail.com</p>
+                </div>
+                <br>
+                <ul class="icon-list">
+                    <li><i class="fab fa-twitter icon-large" style="color: #1DA1F2;"></i> <a href="https://twitter.com/Govardh16652574" target="_blank">Twitter</a></li>
+                    <li><i class="fab fa-instagram icon-large" style="color: #cb7585;"></i> <a href="https://www.instagram.com/govardhan_99515" target="_blank">Instagram</a></li>
+                    <li><i class="fab fa-linkedin icon-large" style="color: #0077B5;"></i> <a href="https://www.linkedin.com/in/govardhan-annabathula-69330a257/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
