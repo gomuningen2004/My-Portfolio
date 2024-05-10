@@ -1,29 +1,3 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Poor Story', cursive;
-}
-
-/* Navbar css common for all pages */
-.nav{
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-}
-
-.nav-items{
-  list-style: none;
-  padding: 0%;
-  display: flex;
-  gap: 3rem;
-}
-
-.nav-items a:link, a:visited, a:hover{
-  text-decoration: none;
-  color: white;
-}
-
 /* hero section */
 .hero-section{
   display: flex;
@@ -140,25 +114,3 @@
 /* Till here is for the polaroid photo don't edit this part */
 
 
-/* footer section */
-.footer{
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.5rem;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-items{
-  list-style: none;
-  padding: 0%;
-  display: flex;
-  gap: 5rem;
-}
-
-.nav-items a:link, a:visited, a:hover{
-  text-decoration: none;
-  color: white;
-}
