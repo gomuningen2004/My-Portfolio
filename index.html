@@ -66,6 +66,7 @@
         margin-top: 6px;
         padding: 20px;
       }
+      
 
       @media (max-width : 600px) {
 
@@ -106,7 +107,7 @@
       <div class="container">
         <div class="px-4 py-5 my-0 text-center">
           <img class="d-block mx-auto mb-4" src="./Assets/images/my-photo.jpg" alt="My profile photo" width="180" height="180" style="border-radius: 50%;">
-          <h1 class="display-5 fw-bold text-body-emphasis mb-4">Hello.</h1>
+          <h2 class="display-5 fw-bold text-body-emphasis mb-4">Hello.</h2>
           <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">
               I'm a web developer eagerly immersing myself in web development. I am actively applying the skills in my learning journey to use.
@@ -117,13 +118,29 @@
     </section>
     
     <section>
-      <div class="container px-4 py-4" id="featured-3">
-        <h2 class="pb-2 border-bottom">Projects</h2>
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 g-3 py-4"> <!-- change the numbers as per the below one -->
-          <div class="col">
-            <div class="card shadow-sm">
+      <div class="container px-4 py-4">
+        <h3 class="pb-2 border-bottom">Projects</h3>
+        
+        <div class="card my-4">
+          <div class="row g-0">
+            <div class="col-md-5 d-flex">
+              <img src="./Assets/images/My-blog.png" class="img-fluid rounded" alt="website display" style="max-height: max-content;">
+            </div>
+            <div class="col-md-7">
               <div class="card-body">
-                <h5 class="card-title"></h5>
+                <h4 class="card-title">Posts</h4>
+                <br>
+                <p class="card-text">
+                  This Node.js and Express-based blog application allows users to create, edit, and delete posts. It utilizes EJS for
+                  templating and includes basic functionalities such as viewing all posts on the homepage, creating new posts, editing
+                  existing posts, and deleting posts. The application runs on a server, handling HTTP requests to manage a simple
+                  in-memory database of blog posts.
+                </p>
+                <br>
+                <div class="d-flex justify-content-evenly pb-2">
+                  <a href="https://blog-application-dwou.onrender.com/" class="btn btn-primary" target="_blank">Live deployment</a>
+                  <a href="https://github.com/gomuningen2004/Blog-application" class="btn btn-primary" target="_blank">Github Repository</a>
+                </div>
               </div>
             </div>
           </div>
@@ -133,7 +150,7 @@
 
     <section>
       <div class="container px-4 py-4" id="featured-3">
-        <h2 class="pb-2 border-bottom">What I know</h2>
+        <h3 class="pb-2 border-bottom">What I know</h3>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 py-4">
           <div class="col">
             <div class="card shadow-sm">
@@ -186,13 +203,13 @@
 
     <section>
       <div class="container px-4 py-4" id="featured-3">
-        <h2 class="pb-2 border-bottom">Education</h2>
+        <h3 class="pb-2 border-bottom">Education</h3>
         <div class="row g-4 py-4 row-cols-1 row-cols-lg-3">
           <div class="feature col">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
               <img src="./Assets/images/university-cap.svg" alt="graduation cap image" height="50">
             </div>
-            <h3 class="fs-2 text-body-emphasis">University</h3>
+            <h4 class="fs-2 text-body-emphasis">University</h4>
             <p>GITAM University<br>Bachelor of Technology in Computer Science<br>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar2" viewBox="0 0 16 16">
                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
@@ -204,7 +221,7 @@
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
               <img src="./Assets/images/diploma-svgrepo-com.svg" alt="diploma image" height="50">
             </div>
-            <h3 class="fs-2 text-body-emphasis">Technical Education</h3>
+            <h4 class="fs-2 text-body-emphasis">Technical Education</h4>
             <p>VNR VJIET<br>Diploma in Mechanical Engineering<br>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar2" viewBox="0 0 16 16">
                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
@@ -216,7 +233,7 @@
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
               <img src="./Assets/images/backpack2.svg" alt="backpack image" height="50">
             </div>
-            <h3 class="fs-2 text-body-emphasis">Highschool</h3>
+            <h4 class="fs-2 text-body-emphasis">Highschool</h4>
             <p>MNR Scottsdale<br>Central Board of Secondary Education<br>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar2" viewBox="0 0 16 16">
                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
@@ -231,7 +248,7 @@
     <section>
       <div class="container">
         <div style="text-align:center">
-          <h1 class="pb-2 border-bottom">Contact Me</h1>
+          <h3 class="pb-2 border-bottom">Contact Me</h3>
         </div>
         <div class="d-flex justify-content-center py-3">
           <div class="column">
@@ -263,7 +280,7 @@
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-3 border-top">
           <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Govardhan</span>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Govardhan</span>
           </div>
       
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
