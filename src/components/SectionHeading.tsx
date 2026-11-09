@@ -1,5 +1,3 @@
-import { Box, Typography } from "@mui/material";
-
 interface SectionHeadingProps {
   eyebrow: string;
   title: string;
@@ -12,16 +10,18 @@ export default function SectionHeading({
   description,
 }: SectionHeadingProps) {
   return (
-    <Box className="section-heading">
-      <Typography className="eyebrow">{eyebrow}</Typography>
-      <Typography component="h2" variant="h2" className="section-title">
+    <div className="mb-8 max-w-[690px] md:mb-[46px]">
+      <p className="mb-[14px] font-mono text-[0.72rem] tracking-[0.08em] text-accent">
+        {eyebrow}
+      </p>
+      <h2 className="m-0 font-display text-[clamp(2.15rem,9vw,3.2rem)] font-bold leading-[1.12] tracking-[-0.065em] md:text-[clamp(2.3rem,4.5vw,3.8rem)]">
         {title}
-      </Typography>
+      </h2>
       {description && (
-        <Typography color="text.secondary" className="section-description">
+        <p className="mt-[17px] max-w-[560px] text-base leading-[1.8] text-muted">
           {description}
-        </Typography>
+        </p>
       )}
-    </Box>
+    </div>
   );
 }

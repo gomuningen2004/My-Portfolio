@@ -1,4 +1,4 @@
-import About from "./components/About";
+import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import EducationTimeline from "./components/EducationTimeline";
 import Footer from "./components/Footer";
@@ -13,10 +13,10 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Projects />
         <Skills />
         <EducationTimeline />
+        <Projects />
+        <Certifications />
         <Contact />
       </main>
       <Footer />

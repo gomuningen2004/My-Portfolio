@@ -1,32 +1,22 @@
-import { Container } from "@mui/material";
+import SkillCard from "./SkillCard";
 import { skillGroups } from "../data/portfolio";
 import SectionHeading from "./SectionHeading";
 
 export default function Skills() {
   return (
-    <section className="section skills-section" id="skills">
-      <Container maxWidth="lg">
+    <section className="py-[82px] pb-[125px] md:py-28" id="skills">
+      <div className="mx-auto max-w-6xl px-5">
         <SectionHeading
-          eyebrow="03 / TOOLKIT"
+          eyebrow="02 / TOOLKIT"
           title="Tools I work with."
           description="A growing set of tools and technologies I use to bring ideas to life."
         />
-        <div className="skills-grid">
-          {skillGroups.map((group, index) => (
-            <article className="skill-group" key={group.title}>
-              <span className="skill-group-index">0{index + 1}</span>
-              <h3>{group.title}</h3>
-              <div className="skill-list">
-                {group.skills.map((skill) => (
-                  <span className="skill-pill" key={skill}>
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </article>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-[18px]">
+          {skillGroups.map((group) => (
+            <SkillCard group={group} key={group.title} />
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   );
 }
