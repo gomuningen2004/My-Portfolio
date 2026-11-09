@@ -34,7 +34,7 @@ export default function EducationTimeline() {
                   )}
                 </div>
                 <p className="mb-[7px] font-mono text-[0.64rem] tracking-[0.08em] text-accent uppercase">
-                  {item.kind === "education" ? item.level : item.department}
+                  {item.kind === "education" ? item.level : item.organization}
                 </p>
                 <h3 className="m-0 font-display text-[1.1rem] font-bold tracking-[-0.04em]">
                   {item.kind === "education" ? item.institution : item.role}
@@ -42,7 +42,7 @@ export default function EducationTimeline() {
                 <p className="my-[7px] mb-3 min-h-0 text-[0.82rem] leading-[1.55] text-muted md:min-h-[42px] md:text-[0.8rem]">
                   {item.kind === "education"
                     ? item.qualification
-                    : `${item.organization}. ${item.description}`}
+                    : item.department}
                 </p>
               </article>
               <span

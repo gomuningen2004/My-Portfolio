@@ -201,7 +201,6 @@ export type JourneyEntry =
       role: string;
       organization: string;
       department: string;
-      description: string;
       years: string;
     };
 
@@ -235,7 +234,6 @@ export const journey: JourneyEntry[] = [
     role: "Graduate Engineer Trainee",
     organization: "Surgevector (previously Adaequare)",
     department: "Data Engineering",
-    description: "Working on a hiring platform for the organization.",
     years: "Feb 2026 — Present",
   },
 ];
